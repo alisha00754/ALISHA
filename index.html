@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="navbar1">
+        <section class="icons">
+
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </section>
+        <section class="logo">
+            <h1>Cake Shop</h1>
+        </section>
+        <section class="contact">Call Us: 10 100 100 1000</section>
+    </section>
+    <section class="navbar2">
+
+
+        <section class="hamburger">
+            <img src="icons8-hamburger-30 (1).png">
+        </section>
+
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="#cakes">CAKES</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+
+        </ul>
+    </section>
+    <section class="herosection">
+        <section class="herocontent">
+            <h1>Healthy Made</h1>
+            <h1> Delicious Cake</h1>
+            <section class="order">
+                <section class="order1">ORDER NOW</section>
+            </section>
+        </section>
+        <section class="image">
+            <img src="cake1-removebg-preview.png">
+        </section>
+    </section>
+
+    <section class="about" id="about">
+        <section class="about-section">
+        <section class="heading">
+            <h1>About Us</h1>
+        </section>
+        <section class="about-body">
+             <section class="about-fig">
+           <img src="./assets/CSS/cake2.jpg" alt="about-img" height="300" width="400">
+        </section>
+          <section class="about-text">
+        <h1>This is Schilers.Awesome Food theme.Purchase it and eat Burgers</h1>
+        <hr>
+       
+       
+        <section class="about-description">
+          
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.
+
+Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in reprehen derit in voluptate velit esse cillum.</p>
+        </section>
+        <button>Explore more!!!</button>
+       
+        </section>
+        </section>
+    </section>
+    </section>
+    <section class="call-to-action">
+        <div class="action-image">
+            <h1>CAKE SHOP</h1>
+        </div>
+    </section>
+
+    <!-- <section class="cakes" id="cakes">
+        <section class="img1">
+        <img src="c1.jpg">
+        <h1>Delightful lemon</h1>
+        <h3>Rs.300</h3>
+        </section>
+        <section class="img2">
+            <h1>Sweet Suprise</h1>
+            <h3></h3>
+        <img src="c2.jpg">
+        </section>
+        <section class="img3">
+            <h1>Cashmere Tank</h1>
+        <img src="c3.jpg">
+        </section>
+        <section class="img4">
+            <h1></h1>
+        <img src="c4.jpg">
+        </section>
+        <section class="img5">
+           
+        <img src="c5.jpg">
+        </section>
+    </section> -->
+
+    
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const value = document.querySelector('.navbar2 ul');
+        let menuOpen = false;
+
+        hamburger.addEventListener('click', () => {
+            if (menuOpen == false) {
+                value.style.display = 'block';
+                menuOpen = true;
+
+            }
+            else {
+                value.style.display = 'none';
+                menuOpen = false;
+            }
+        });
+    </script>
+
+  
+</body>
+
+</html>
