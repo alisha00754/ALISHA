@@ -27,7 +27,7 @@
 
 
         <section class="hamburger">
-            <img src="icons8-hamburger-30 (1).png">
+            <img src="./assets/CSS/image/icons8-hamburger-30 (1).png">
         </section>
 
         <ul>
@@ -48,7 +48,7 @@
             </section>
         </section>
         <section class="image">
-            <img src="cake1-removebg-preview.png">
+            <img src="./assets/CSS/image/cake1-removebg-preview.png">
         </section>
     </section>
 
@@ -59,7 +59,7 @@
         </section>
         <section class="about-body">
              <section class="about-fig">
-           <img src="./assets/CSS/cake2.jpg" alt="about-img" height="300" width="400">
+           <img src="./assets/CSS/image/c2.jpg" alt="about-img" height="300" width="400">
         </section>
           <section class="about-text">
         <h1>This is Schilers.Awesome Food theme.Purchase it and eat Burgers</h1>
@@ -78,36 +78,41 @@ Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magn
         </section>
     </section>
     </section>
-    <section class="call-to-action">
-        <div class="action-image">
-            <h1>CAKE SHOP</h1>
-        </div>
-    </section>
+    
 
-    <!-- <section class="cakes" id="cakes">
-        <section class="img1">
-        <img src="c1.jpg">
+    <section class="cakes" id="cakes">
+
+        <section class="img">
+        <img src="./assets/CSS/image/c1.jpg">
         <h1>Delightful lemon</h1>
-        <h3>Rs.300</h3>
+        <h3>Rs.800</h3>
         </section>
-        <section class="img2">
-            <h1>Sweet Suprise</h1>
-            <h3></h3>
-        <img src="c2.jpg">
+
+        <section class="img">
+        <img src="./assets/CSS/image/c2.jpg">
+         <h1>Sweet Suprise</h1>
+            <h3>Rs.700</h3>
         </section>
-        <section class="img3">
-            <h1>Cashmere Tank</h1>
-        <img src="c3.jpg">
+
+        <section class="img">
+        <img src="./assets/CSS/image/c3.jpg">
+         <h1>Cashmere Tank</h1>
+         <h3>Rs.250</h3>
         </section>
-        <section class="img4">
-            <h1></h1>
-        <img src="c4.jpg">
+
+        <section class="img">
+        <img src="./assets/CSS/image/c4.jpg">
+         <h1> Delightful lemon</h1>
+         <h3>Rs.200</h3>
         </section>
-        <section class="img5">
-           
-        <img src="c5.jpg">
+
+        <section class="img">
+        <img src="./assets/CSS/image/c5.jpg">
+         <h1>Cashmere Tank</h1>
+         <h3>Rs 180</h3>
         </section>
-    </section> -->
+
+    </section>
 
     
 
@@ -127,6 +132,24 @@ Consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magn
                 menuOpen = false;
             }
         });
+        let slideIndex=0
+        slideshows()
+
+        function slideshows(){
+            let i
+            let slides=document.getElementsByClassName("img")
+            console.log(slides)
+            for(i=0;i<slides.length;i++){
+                slides[i].style.display="none"
+            }  
+            slideIndex++;
+            if(slideIndex>slides.length){
+                slideIndex=1
+            }
+            slides[slideIndex-1].style.display="block";
+            setTimeout(slideshows,2000);
+        }
+        
     </script>
 
   
