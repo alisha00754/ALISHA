@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.solar-system{
+    display: flex;
+   justify-content: center;
+   
+}
+ .container{
+  height: 800px;
+  width: 800px;
+ border-radius: 50%;
+ border: 1px,solid,black;
+ margin: 200px 0px;
+  animation: rotate linear infinite 10s;
+ 
+
+}
+.earth{
+       
+        position: absolute;
+        margin-top: 15%;
+        
+    
+      
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+ .sun{
+    height: 300px;
+    width: 300px;
+    
+    border-radius: 50%;
+    margin-left: 85%;
+    
+    background: radial-gradient(circle,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 100%);
+}
+
+
+.solar-system .container .earth img{
+    
+  
+ height: 100px;
+ width: 100px;
+
+}
