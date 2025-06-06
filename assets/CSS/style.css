@@ -259,11 +259,106 @@
     font-size: 16px;
 
 }   
-.img{
+.cakes .img{
     display: flex;
     animation: fade 2s;
 }       
 @keyframes fade{
     from{opacity:.4;transform: scale(.4,.4);}
     to{opacity:1;transform: scale(1,1);}
+}
+.food{
+   
+    background-color: black;
+    display: flex; 
+    flex-direction: column;
+    padding: 20px 0px;
+   
+}
+.food .heading{
+     text-align: center;
+    padding-bottom: 30px;
+}
+
+.food .heading h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 100;
+    font-family: cursive;
+}
+.food .reviews{
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 80px;
+    
+
+}
+.food .reviews .icon{
+    display: inline;
+    padding-bottom: 10px;
+}
+.food .reviews .review{
+    height: 300px;
+    width: 350px;
+    border: 0.2px,rgb(143, 140, 140),solid;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    padding: 0px 40px;
+
+}
+.food .reviews .review p{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+    padding: 20px 0px;
+}
+.food .reviews .review .name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    gap: 8px;
+}
+.food .reviews .review .name span{
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.food .reviews .review .name .picture img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   
+}
+.blog{
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    font-family: cursive;
+
+}
+.blog .intro{
+    display: flex;
+justify-content: space-between;
+padding:60px 30px ;
+}
+.blog .intro h1{
+    font-size: 38px;
+    color:white;
+}
+.blog .intro button{
+    background-color: rgb(216, 149, 25) ;
+    padding: 10px 40px;
+    font-weight: 100;
+}
+.blog .description .descrip1{
+    
+
 }
